@@ -1,0 +1,242 @@
+figcaption{
+	display: block; 
+}
+figure {
+  float: center;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+}
+div.hover{
+	background-color: #FFCCCC;
+    width: 200px;
+    height: 200px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+div.container6 {
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+div.container6 p {
+  margin: 0 
+}
+div{
+	border-radius: 4px; 
+	padding: 4px;
+}
+* {
+  box-sizing: border-box;
+}
+input[type=text],[type=email], select, textarea {
+  width: 500px;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  resize: vertical;
+  margin-bottom: 20px; 
+  
+
+}
+.contactForm {
+  border-radius: 6px;
+  background-color: gainsboro;
+  width: 600px; 
+  display: inline-block;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+
+input[type=submit] {
+  background-color: white;
+  color: cornflowerblue;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 150px; 
+
+}
+
+input[type=submit]:hover {
+  background-color: azure;
+  color:black;
+}
+.form-control{
+	width: 500px; 
+	color: ghostwhite; 
+	border-radius: 6px; 
+}
+
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+img{
+	height: 300px; 
+	width: 300px; 
+    justify-content: center; 
+	float: right; 
+	border-radius: 8px; 
+}
+
+h1.dotted{  /* header with dotted border */
+	color: black; 
+	font-family: 'Courier'; 
+	font-size: 14px; 
+	float: right; 
+	border-style: dotted; 
+}
+h1 {
+	color: black; 
+	font-size: 30px; 
+	font-family: 'News Cycle', sans-serif; 
+	background-color: white; 
+}
+h2 {
+	color: black; 
+	font-family: 'News Cycle', sans-serif; 
+	font-size: 24px; 
+	float: center; 
+	
+}
+a:visited{
+	color : none; 
+}
+/*h2{
+	color: black; 
+	font-family: 'News Cycle', sans-serif; 
+	font-size: 24px;
+	float: left;
+	margin-left: 70px; 
+	height: 40px; 
+}*/ 
+p{
+	color: black; 
+	font-family: 'Courier'; 
+	font-size: 14px; 
+}
+div.container6 {
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center 
+}
+div.container6 p {
+  margin: 0 
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'News Cycle', sans-serif; 
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: azure; 
+  text-align: center; 
+}
+body > * {
+	text-align: center; 
+}
+.footer{ 
+     position: fixed;     
+     text-align: left;    
+     bottom: 0px; 
+     width: 100%;
+	 font-family: 'News Cycle', sans-serif; 
+	 font-size: 15px
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+form{
+	margin-top: 50px; 
+}
+
+/* Create four equal columns that sits next to each other */
+/*.column {
+  -ms-flex: 25%; /* IE10 
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}*/ 
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+/*@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}*/ 
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other 
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}*/ 

@@ -1,0 +1,146 @@
+<!DOCTYPE html> 
+<link rel="stylesheet" href= "css/about.css">
+<script src="js/portfolio.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended+Text|Shadows+Into+Light+Two|Homemade+Apple|League+Script|Londrina+Outline|Seaweed+Script|Tulpen+One|Vast+Shadow|Monoton|Special+Elite|Shrikhand|Bungee+Inline|Coiny|Major+Mono+Display|Satisfy|Nunito+Sans" rel="stylesheet">
+
+
+
+<html>
+	<ul><li><a href = https://github.com/kwilley18>GitHub</a></li>
+	<li><a href="https://www.linkedin.com/in/kristian-willey-621430153/">LinkedIn</a></li>
+			<li><a href="projects.html">Projects</a></li>
+					<li><a href="about.html">About Me</a></li>
+		<li><a href="index.html" class="active">Home</a></li>
+
+	</ul>
+	<body>
+				<center><h1>About Me</h1></center>
+
+		<center><h2><img src = "photo/grad.JPG" alt= "Me" style="width:470px;height:470px;margin-left:15px">My name is Kristian Willey. I am 24 years-old from Las Vegas, Nevada. I recently graduated from the University of Nevada, Reno with a degree in Computer Science and Engineering. I have a hobby in web design and graphics. My ultimate career goal would have to be Front End Web Development and/or Graphics Design. I have created a few web pages by using HTML5, CSS, and JavaScript. I am starting to become familiar with JavaScript environments such as Node.js I have also created small 2D games using C#. And finally, I have had some practice with creating simple graphics in Blender. If you're interested into viewing my resume, please don't hesitate to fill out the contact box below. </h2></center></body><!-- <a href="kristianwilleyresume2.pdf" target="_blank">resume</a> that lists all of my programming experiences as well as my job experiences.</h1></center> 
+<h2>Thank you for the message!</h2>
+	</body>
+	
+<!--script>
+function _(id){ 
+	return document.getElementById(id); 
+}
+
+function submitForm(){
+
+	_("submit").disabled = true;
+	_("status").innerHTML = 'please wait ...';
+	
+	var formdata = new FormData();
+	formdata.append( "name", _("name").value );
+	formdata.append( "email", _("email").value );
+	formdata.append( "message", _("message").value );
+	
+	var ajax = new XMLHttpRequest();
+	ajax.open( "POST", "action_page.php" );
+	ajax.onreadystatechange = function() {
+		if(ajax.readyState == 4 && ajax.status == 200) {
+			if(ajax.responseText == "success"){
+				_("_contactForm").innerHTML = '<h2>Thanks '+_("name").value+', your message has been sent.</h2>';
+			} else {
+				_("status").innerHTML = ajax.responseText;
+				_("submit").disabled = false;
+			}
+		}
+	}
+	ajax.send(formdata);
+}		
+</script>	
+<div class= "contactForm">
+	<form id="_contactForm" method="post" action="action_page.php" onsubmit="submitForm(); return false;">
+	<input name="name" id="name" type="text" class="form-control" placeholder="Name" required>
+		<br>
+		<input name="email" id="email" type="email" class="form-control" placeholder="Email Address"required><br>
+			<textarea name="message" id="message" class="form-control" placeholder="Message to Kristian Willey" row="4"required></textarea><br>
+		<p><input type="submit" id="submit" class="form-control submit" value="SEND MESSAGE"><span style="color:blue;font-weight:bold" id="status"></span></p>
+	</form>
+		
+</div>
+<div class="container">
+  <form name="contactform" method ="post" action="action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname_" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname_" placeholder="Your last name..">
+    </div>
+  </div>
+  <div class="row">
+<div class="col-25">
+      <label for="email">Email Address</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="email" name="email_" placeholder="Your email address">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="message">Subject</label>
+    </div>
+    <div class="col-75">
+      <textarea id="message" name="message_" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+	
+</div>
+
+
+		
+</html-->
+<head>
+<meta charset="UTF-8">
+<script>
+function _(id){ return document.getElementById(id); }
+function submitForm(){
+	_("mybtn").disabled = true;
+	_("status").innerHTML = 'please wait ...';
+	var formdata = new FormData();
+	formdata.append( "n", _("n").value );
+	formdata.append( "e", _("e").value );
+	formdata.append( "m", _("m").value );
+	var ajax = new XMLHttpRequest();
+	ajax.open( "POST", "php/action_page.php" );
+	ajax.onreadystatechange = function() {
+		if(ajax.readyState == 4 && ajax.status == 200) {
+			if(ajax.responseText == "success"){
+				_("_contactForm").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
+			} else {
+				_("status").innerHTML = ajax.responseText;
+				_("mybtn").disabled = false;
+			}
+		}
+	}
+	ajax.send( formdata );
+}
+</script>
+	<div class="contactForm">
+<form id="_contactForm" onsubmit="submitForm(); return false;">
+  <p><input id="n" type="text" placeholder="Name" required></p>
+  <p><input id="e" type = "email" placeholder="Email Address" type="email" required></p>
+  <textarea id="m" placeholder="write your message here" rows="10" required></textarea>
+  <p><input id="mybtn" type="submit" value="Submit Form"> <span id="status"></span></p>
+</form>
+		</div>
+	</head>
+</html>
